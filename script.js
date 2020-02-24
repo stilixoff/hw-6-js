@@ -99,3 +99,16 @@ const getBestStudent = (student) => {
 }
 
 console.log(getBestStudent(students));
+
+//----------------------------------------------------------------------------------
+
+const calculateWordLetters = (word) => {
+    res = {};
+    word.split('').map(function(i) {
+        i = i.toLowerCase();
+        res[i] = !res[i] ? 1 : res[i] + 1;
+    })
+    return res;
+}
+
+console.log(calculateWordLetters('test'));
